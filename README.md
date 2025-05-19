@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date: 19.05.25
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
@@ -99,6 +99,7 @@ if __name__ == "__main__":
 
 ## OUTPUT:
 ![alt text](<Screenshot 2025-05-19 102102.png>)
+
 ![alt text](<Screenshot 2025-05-19 102431.png>)
 
 ## RESULT:
