@@ -36,10 +36,6 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-
-from http.server import BaseHTTPRequestHandler, HTTPServer
-
-# HTML content with corrected formatting
 content = """
 <!DOCTYPE html>
 <html>
@@ -77,10 +73,9 @@ content = """
         </table>
     </center>
 </body>
-</html>
+</html>    
 """
 
-# HTTP request handler class
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("GET request received...")
@@ -89,7 +84,6 @@ class MyServer(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(content.encode())
 
-# Start the server
 if __name__ == "__main__":
     print("This is my webserver")
     server_address = ('', 8000)
